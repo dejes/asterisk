@@ -8,6 +8,7 @@
 
 import UIKit
 
+import UserNotifications
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: { granted, error in
+            if granted {
+                print("使用者同意了，每天都能搖飲料")
+            }
+            else {
+                print("使用者不同意，不搖飲料了")
+            }
+            
+        })
+        
         return true
     }
 

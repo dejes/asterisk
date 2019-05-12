@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C5448002288876900B3421D /* manualviewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5447FF2288876900B3421D /* manualviewcontroller.swift */; };
 		9C705D4A22856F7D00EE6D9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C705D4922856F7D00EE6D9C /* AppDelegate.swift */; };
 		9C705D4C22856F7D00EE6D9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C705D4B22856F7D00EE6D9C /* ViewController.swift */; };
 		9C705D4F22856F7D00EE6D9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C705D4D22856F7D00EE6D9C /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		9C705D5422856F7E00EE6D9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C705D5222856F7E00EE6D9C /* LaunchScreen.storyboard */; };
 		9C705D5F22856F7E00EE6D9C /* asteriskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C705D5E22856F7E00EE6D9C /* asteriskTests.swift */; };
 		9C705D6A22856F7E00EE6D9C /* asteriskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C705D6922856F7E00EE6D9C /* asteriskUITests.swift */; };
+		9C705D7A2285AB5200EE6D9C /* gameviewcontrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C705D792285AB5200EE6D9C /* gameviewcontrollerViewController.swift */; };
+		9C705D7C2287E10900EE6D9C /* scoreviewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C705D7B2287E10900EE6D9C /* scoreviewcontroller.swift */; };
+		9C705D7E2288204A00EE6D9C /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C705D7D2288204A00EE6D9C /* Role.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C5447FF2288876900B3421D /* manualviewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = manualviewcontroller.swift; sourceTree = "<group>"; };
 		9C705D4622856F7D00EE6D9C /* asterisk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = asterisk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C705D4922856F7D00EE6D9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C705D4B22856F7D00EE6D9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		9C705D6522856F7E00EE6D9C /* asteriskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = asteriskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C705D6922856F7E00EE6D9C /* asteriskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = asteriskUITests.swift; sourceTree = "<group>"; };
 		9C705D6B22856F7E00EE6D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C705D792285AB5200EE6D9C /* gameviewcontrollerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameviewcontrollerViewController.swift; sourceTree = "<group>"; };
+		9C705D7B2287E10900EE6D9C /* scoreviewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreviewcontroller.swift; sourceTree = "<group>"; };
+		9C705D7D2288204A00EE6D9C /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,10 @@
 		9C705D3D22856F7C00EE6D9C = {
 			isa = PBXGroup;
 			children = (
+				9C5447FF2288876900B3421D /* manualviewcontroller.swift */,
+				9C705D7D2288204A00EE6D9C /* Role.swift */,
+				9C705D7B2287E10900EE6D9C /* scoreviewcontroller.swift */,
+				9C705D792285AB5200EE6D9C /* gameviewcontrollerViewController.swift */,
 				9C705D4822856F7D00EE6D9C /* asterisk */,
 				9C705D5D22856F7E00EE6D9C /* asteriskTests */,
 				9C705D6822856F7E00EE6D9C /* asteriskUITests */,
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C5448002288876900B3421D /* manualviewcontroller.swift in Sources */,
+				9C705D7A2285AB5200EE6D9C /* gameviewcontrollerViewController.swift in Sources */,
 				9C705D4C22856F7D00EE6D9C /* ViewController.swift in Sources */,
 				9C705D4A22856F7D00EE6D9C /* AppDelegate.swift in Sources */,
+				9C705D7C2287E10900EE6D9C /* scoreviewcontroller.swift in Sources */,
+				9C705D7E2288204A00EE6D9C /* Role.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
