@@ -12,17 +12,17 @@ class scoreviewcontroller: UIViewController {
     
 
     
-    var fuckuapple:String?
+    var apple:String?
     var hanashi=["恭喜你！你趕快辭職去搖飲料吧！飲料店需要你","還可以啦","爛"]
     @IBOutlet var judgelabel: UILabel!
     @IBOutlet var scorelabel: UILabel!
     override func viewDidLoad() {
             
             super.viewDidLoad()
-        if let fuckuapple=fuckuapple{
-            scorelabel.text=fuckuapple
+        if let apple=apple{
+            scorelabel.text=apple
         }
-        if let ff=fuckuapple,let judge=Int(ff){
+        if let ff=apple,let judge=Int(ff){
             if judge>=8{
                 judgelabel.text=hanashi[0]
             }
@@ -35,12 +35,12 @@ class scoreviewcontroller: UIViewController {
         }
         let wow=UserDefaults.standard.string(forKey: "highscore")
         if wow==nil{
-            UserDefaults.standard.set(fuckuapple,forKey: "highscore")
+            UserDefaults.standard.set(apple,forKey: "highscore")
         }
         else{
-            if let wow0=wow, let wowint=Int(wow0), let fuckuapple0=fuckuapple, let hs=Int(fuckuapple0){
+            if let wow0=wow, let wowint=Int(wow0), let apple0=apple, let hs=Int(apple0){
                 if wowint<hs{
-                    UserDefaults.standard.set(fuckuapple,forKey: "highscore")
+                    UserDefaults.standard.set(apple,forKey: "highscore")
                 }
             }
         }

@@ -166,7 +166,7 @@ class gameviewcontrollerViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any? ) {
         let controller=segue.destination as? scoreviewcontroller
         var _role=[String(angryDrinkclass.score)]
-        controller?.fuckuapple=_role[0]
+        controller?.apple=_role[0]
         
     }
 }
